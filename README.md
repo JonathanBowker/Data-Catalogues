@@ -7,38 +7,24 @@ Although we provide a set of questions designed to elicit the information that a
 
 We emphasise that the process of creating a datasheet is not intended to be automated. Although automated documentation processes are convenient, they run counter to our objective of encouraging dataset creators to carefully reflect on the process of creating, distributing, and maintaining a dataset.
 
-# 2 Development Process 
+# 2. Development Process 
 We refined the questions and workflow provided in the next section over a period of roughly two years, incorporating many rounds of feedback. 
 
 First, leveraging our own experiences as researchers with diverse backgrounds working in different domains and institutions, we drew on our knowledge of dataset characteristics, unintentional misuse, unwanted societal biases, and other issues to produce an initial set of questions designed to elicit information about these topics. We then “tested” these questions by creating example datasheets for two widely used datasets: Labeled Faces in the Wild [16] and Pang and Lee’s polarity dataset [22]. We chose these datasets in large part because their creators provided exemplary documentation, allowing us to easily find the answers to many of the questions. While creating these example datasheets, we found gaps in the questions, as well as redundancies and lack of clarity. We therefore refined the questions and distributed them to product teams in two major US-based technology companies, in some cases helping teams to create datasheets for their datasets and observing where the questions did not achieve their intended objectives. Contemporaneously, we circulated an initial draft of this paper to colleagues through social media and on arXiv (draft posted 23 March 2018). Via these channels we received extensive comments from dozens of researchers, practitioners, and policy makers. We also worked with a team of lawyers to review the questions from a legal perspective. 
 
 We incorporated this feedback to yield the questions and workflow provided in the next section: We added and removed questions, refined the content of the questions, and reordered the questions to better match the key stages of the dataset lifecycle. Based on our experiences with product teams, we reworded the questions to discourage yes/no answers, added a section on “Uses,” and deleted a section on “Legal and Ethical Considerations.” We found that product teams were more likely to answer questions about legal and ethical considerations if they were integrated into sections about the relevant stages of the dataset lifecycle rather than grouped together. Finally, following feedback from the team of lawyers, we removed questions that explicitly asked about compliance with regulations, and introduced factual questions intended to elicit relevant information about compliance without requiring dataset creators to make legal judgments.
 
-# 3 Questions and Workflow
-In this section, we provide a set of questions designed to elicit the information
-that a datasheet for a dataset might contain, as well as a workflow for dataset
-creators to use when answering these questions. The questions are grouped
-into sections that roughly match the key stages of the dataset lifecycle: motivation, composition, collection process, preprocessing/cleaning/labeling, uses,
-distribution, and maintenance. This grouping encourages dataset creators to
-reflect on the process of creating, distributing, and maintaining a dataset, and
-even alter this process in response to their reflection. We note that not all
-questions will be applicable to all datasets; those that do not apply should be
-skipped.
-To illustrate how these questions might be answered in practice, we provide
-in the appendix an example datasheet for Pang and Lee’s polarity dataset [22].
-We answered some of the questions with “Unknown to the authors of the
-datasheet.” This is because we did not create the dataset ourselves and could
-not find the answers to these questions in the available documentation. For an
-example of a datasheet that was created by the creators of the corresponding
-dataset, please see that of Cao and Daumé [6].2 We note that even dataset
-creators may be unable to answer all of the questions provided in this section.
-We recommend answering as many questions as possible rather than skipping
-the datasheet creation process entirely.
+# 3. Questions and Workflow
+In this section, we provide a set of questions designed to elicit the information that a datasheet for a dataset might contain, as well as a workflow for dataset creators to use when answering these questions. The questions are grouped into sections that roughly match the key stages of the dataset lifecycle: motivation, composition, collection process, preprocessing/cleaning/labeling, uses, distribution, and maintenance. This grouping encourages dataset creators to reflect on the process of creating, distributing, and maintaining a dataset, and even alter this process in response to their reflection. We note that not all questions will be applicable to all datasets; those that do not apply should be skipped.
+
+To illustrate how these questions might be answered in practice, we provide in the appendix an example datasheet for Pang and Lee’s polarity dataset [22]. We answered some of the questions with “Unknown to the authors of the datasheet.” This is because we did not create the dataset ourselves and could not find the answers to these questions in the available documentation. For an example of a datasheet that was created by the creators of the corresponding dataset, please see that of Cao and Daumé [6].2 We note that even dataset creators may be unable to answer all of the questions provided in this section. We recommend answering as many questions as possible rather than skipping the datasheet creation process entirely.
+
 ## 3.1 Motivation
 The questions in this section are primarily intended to encourage dataset
 creators to clearly articulate their reasons for creating the dataset and to
 promote transparency about funding interests. The latter may be particularly
 relevant for datasets created for research purposes.
+
 - **For what purpose was the dataset created? Was there a specific task in mind?** Was there a specific gap that needed to be filled? Please provide
 a description.
 - **Who created the dataset (e.g., which team, research group) and on behalf of which entity (e.g., company, institution, organization)?**
@@ -98,6 +84,7 @@ If the dataset does not relate to people, you may skip the remaining questions i
 
 ## 3.4 Preprocessing/cleaning/labeling
 Dataset creators should read through these questions prior to any preprocessing, cleaning, or labeling and then provide answers once these tasks are complete. The questions in this section are intended to provide dataset consumers with the information they need to determine whether the “raw” data has been processed in ways that are compatible with their chosen tasks. For example, text that has been converted into a “bag-of-words” is not suitable for tasks involving word order.
+
 - **Was any preprocessing/cleaning/labeling of the data done (e.g., discretization or bucketing, tokenization, part-of-speech tagging, SIFT feature extraction, removal of instances, processing of missing values)?** If so, please provide a description. If not, you may skip the remaining questions in this section.
 - **Was the “raw” data saved in addition to the preprocessed/cleaned/labeled data (e.g., to support unanticipated future uses)?** If so, please provide a link or other access point to the “raw” data.
 - **Is the software that was used to preprocess/clean/label the data available?** If so, please provide a link or other access point.
@@ -105,6 +92,7 @@ Dataset creators should read through these questions prior to any preprocessing,
 
 ## 3.5 Uses
 The questions in this section are intended to encourage dataset creators to reflect on the tasks for which the dataset should and should not be used. By explicitly highlighting these tasks, dataset creators can help dataset consumers to make informed decisions, thereby avoiding potential risks or harms.
+
 - **Has the dataset been used for any tasks already?** If so, please provide a description.
 - **Is there a repository that links to any or all papers or systems that use the dataset?** If so, please provide a link or other access point.
 - **What (other) tasks could the dataset be used for?**
@@ -114,6 +102,7 @@ The questions in this section are intended to encourage dataset creators to refl
 
 ## 3.6 Distribution
 Dataset creators should provide answers to these questions prior to distributingthe dataset either internally within the entity on behalf of which the  dataset was created or externally to third parties.
+
 - **Will the dataset be distributed to third parties outside of the entity (e.g., company, institution, organization) on behalf of which the dataset was created?** If so, please provide a description.
 - **How will the dataset will be distributed (e.g., tarball on website, API, GitHub)?** Does the dataset have a digital object identifier (DOI)?
 - **When will the dataset be distributed?**
@@ -125,6 +114,7 @@ restrictions, and provide a link or other access point to, or otherwise reproduc
 
 ## 3.7 Maintenance
 As with the questions in the previous section, dataset creators should provide answers to these questions prior to distributing the dataset. The questions in this section are intended to encourage dataset creators to plan for dataset maintenance and communicate this plan to dataset consumers.
+
 - **Who will be supporting/hosting/maintaining the dataset?**
 - **How can the owner/curator/manager of the dataset be contacted (e.g., email address)?**
 - **Is there an erratum?** If so, please provide a link or other access point.
