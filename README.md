@@ -4,7 +4,7 @@ Dataset Cards are intended to address the needs of two key stakeholder groups: d
 Beyond these two key groups, Dataset Cards are also valuable to policy makers, consumer advocates, investigative journalists, individuals whose data is included in datasets, and individuals who may be impacted by models trained or evaluated using datasets. They serve a secondary objective of facilitating greater reproducibility of machine learning results: researchers and practitioners without access to a dataset may be able to use the information in its datasheet to create alternative datasets with similar characteristics. 
 
 # Questions and Workflow
-In this section, we provide a set of questions designed to gather the information that a Dataset Card might contain, as well as a workflow for dataset creators to use when answering these questions. The questions are grouped into sections that roughly match the key stages of the dataset lifecycle: motivation, composition, collection process, preprocessing, uses, distribution, and maintenance. This grouping encourages dataset creators to reflect on the process of creating, distributing, and maintaining a dataset, and even alter this process in response to their reflection. Not all questions will be applicable to all datasets; those that do not apply should be skipped.
+In this section, we provide a set of questions designed to gather the information that a Dataset Card might contain, as well as a workflow for dataset creators to use when answering these questions. The questions are grouped into sections that roughly match the key stages of the dataset lifecycle: motivation, composition, collection process, preprocessing/cleaning/labeling, uses, distribution, and maintenance. This grouping encourages dataset creators to reflect on the process of creating, distributing, and maintaining a dataset, and even alter this process in response to their reflection. Not all questions will be applicable to all datasets; those that do not apply should be skipped.
 
 To illustrate how these questions might be answered in practice, we provide in the appendix an example datasheet for Pang and Lee’s polarity dataset. We answered some of the questions with “Unknown to the authors of the datasheet.” This is because we did not create the dataset ourselves and could not find the answers to these questions in the available documentation. For an example of a datasheet that was created by the creators of the corresponding dataset, please see that of Cao and Daumé.2 We note that even dataset creators may be unable to answer all of the questions provided in this section. We recommend answering as many questions as possible rather than skipping the datasheet creation process entirely.
 
@@ -13,12 +13,12 @@ The questions in this section are primarily intended to encourage dataset creato
 
 - **For what purpose was the dataset created? Was there a specific task in mind?** Was there a specific gap that needed to be filled? Please provide
 a description.
-- **Who created the dataset (e.g., which team, research group) and on behalf of which entity (e.g., company, institution, organization)?**
+- **Who created the dataset (e.g., which team, research group) and on behalf of which entity (e.g., company, institution, organisation)?**
 - **Who funded the creation of the dataset?** If there is an associated grant, please provide the name of the grantor and the grant name and number.
 - **Any other comments?**
 
 ## 2. Composition
-Dataset creators should read through these questions prior to any data collection and then provide answers once data collection is complete. Most of the questions in this section are intended to provide dataset consumers with the information they need to make informed decisions about using the dataset for their chosen tasks. Some of the questions are designed to elicit information about compliance with the EU’s General Data Protection Regulation (GDPR) or comparable regulations in other jurisdictions. 
+Dataset creators should read through these questions prior to any data collection and then provide answers once data collection is complete. Most of the questions in this section are intended to provide dataset consumers with the information they need to make informed decisions about using the dataset for their chosen tasks. Some of the questions are designed to elicit information about compliance with the EU and UK’s General Data Protection Regulation (GDPR) or comparable regulations in other jurisdictions. 
 
 Questions that apply only to datasets that relate to people are grouped together at the end of the section. We recommend taking a broad interpretation of whether a dataset relates to people. For example, any dataset containing text that was written by people relates to people.
 
@@ -68,7 +68,7 @@ If the dataset does not relate to people, you may skip the remaining questions i
 - **Has an analysis of the potential impact of the dataset and its use on data subjects (e.g., a data protection impact analysis) been conducted?** If so, please provide a description of this analysis, including the outcomes, as well as a link or other access point to any supporting documentation.
 - **Any other comments?**
 
-## 4. Preprocessing
+## 4. Preprocessing/Cleaning/Labeling
 Dataset creators should read through these questions prior to any preprocessing, cleaning, or labeling and then provide answers once these tasks are complete. The questions in this section are intended to provide dataset consumers with the information they need to determine whether the “raw” data has been processed in ways that are compatible with their chosen tasks. For example, text that has been converted into a “bag-of-words” is not suitable for tasks involving word order.
 
 - **Was any preprocessing/cleaning/labeling of the data done (e.g., discretization or bucketing, tokenization, part-of-speech tagging, SIFT feature extraction, removal of instances, processing of missing values)?** If so, please provide a description. If not, you may skip the remaining questions in this section.
