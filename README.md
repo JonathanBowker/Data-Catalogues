@@ -19,9 +19,9 @@ a description.
 - **Any other comments?**
 
 ## 2. Composition
-Dataset creators should read through these questions prior to any data collection and then provide answers once data collection is complete. Most of the questions in this section are intended to provide dataset consumers with the information they need to make informed decisions about using the dataset for their chosen tasks. Some of the questions are designed to elicit information about compliance with the EU and UK’s General Data Protection Regulation (GDPR) or comparable regulations in other jurisdictions. 
+Dataset creators should read through these questions prior to any data collection and then provide answers once data collection is complete. Most of the questions in this section are intended to provide dataset consumers with the information they need to make informed decisions about using the dataset for their chosen tasks. Some of the questions are designed to gather information about compliance with the UK General Data Protection Regulation (GDPR) or comparable regulations in other jurisdictions. 
 
-Questions that apply only to datasets that relate to people are grouped together at the end of the section. We recommend taking a broad interpretation of whether a dataset relates to people. For example, any dataset containing text that was written by people relates to people.
+Questions that apply only to datasets that relate to groups of people referred to at the end of the section. We recommend taking a broad interpretation of whether a dataset relates to people. For example, any dataset containing text that was written by people relates to people.
 
 - **What do the instances that comprise the dataset represent (e.g.,documents, photos, people, countries)? Are there multiple types of instances (e.g., movies, users, and ratings; people and interactions between them; nodes and edges)?** Please provide a description.
 - **How many instances are there in total (of each type, if appropriate)?**
