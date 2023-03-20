@@ -1,16 +1,16 @@
-# Dataset Cards
-Dataset Cards are intended to address the needs of two key stakeholder groups: dataset creators and dataset consumers. 
+# Data Catalogues
+Data Catalogues are intended to address the needs of two key stakeholder groups: dataset creators and dataset consumers. 
 
  - **For dataset creators**, the primary objective is to encourage careful reflection on the process of creating, distributing, and maintaining a dataset, including any underlying assumptions, potential risks or harms, and implications of use. 
  - **For dataset consumers**, the primary objective is to ensure they have the information they need to make informed decisions about using a dataset. Transparency on the part of dataset creators is necessary for dataset consumers to be sufficiently well informed that they can select appropriate datasets for their chosen tasks and avoid unintentional misuse.
 
-Beyond these two key groups, Dataset Cards are also valuable to **policy makers, consumer advocates, investigative journalists, individuals whose data is included in datasets, and individuals who may be impacted by models trained or evaluated using datasets**. They serve a secondary objective of facilitating greater reproducibility of machine learning results: researchers and practitioners without access to a dataset may be able to use the information in its Dataset Card to create alternative datasets with similar characteristics. 
+Beyond these two key groups, Data Catalogues are also valuable to **policy makers, consumer advocates, investigative journalists, individuals whose data is included in datasets, and individuals who may be impacted by models trained or evaluated using datasets**. They serve a secondary objective of facilitating greater reproducibility of machine learning results: researchers and practitioners without access to a dataset may be able to use the information in its Data Catalogue to create alternative datasets with similar characteristics. 
 
 # Questions and Workflow
-In this section, we provide a set of questions designed to gather the information that a Dataset Card might contain, as well as a workflow for dataset creators to use when answering these questions. The questions are grouped into sections that roughly match the key stages of the dataset lifecycle: motivation, composition, collection process, preprocessing/cleaning/labeling, uses, distribution, and maintenance. This grouping encourages dataset creators to reflect on the process of creating, distributing, and maintaining a dataset, and even alter this process in response to their reflection. Not all questions will be applicable to all datasets; those that do not apply should be skipped.
+In this section, we provide a set of questions designed to gather the information that a Data Catalogue might contain, as well as a workflow for dataset creators to use when answering these questions. The questions are grouped into sections that roughly match the key stages of the dataset lifecycle: motivation, composition, collection process, preprocessing/cleaning/labeling, uses, distribution, and maintenance. This grouping encourages dataset creators to reflect on the process of creating, distributing, and maintaining a dataset, and even alter this process in response to their reflection. Not all questions will be applicable to all datasets; those that do not apply should be skipped.
 
 ## 1. Motivation
-The questions in this section are primarily intended to encourage dataset creators to clearly articulate their reasons for creating the dataset and to promote transparency about funding interests. The latter may be particularly relevant for datasets created for research purposes.
+The questions in this section are primarily intended to encourage dataset creators to clearly document their reasons for creating the dataset and to promote transparency about funding interests. The latter may be particularly relevant for datasets created for research purposes.
 
 - **For what purpose was the dataset created? Was there a specific task in mind?** Was there a specific gap that needed to be filled? Please provide
 a description.
