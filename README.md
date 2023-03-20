@@ -55,25 +55,26 @@ As with the questions in the previous section, dataset creators should read thro
 - **How was the data associated with each instance acquired?** Was the data directly observable (e.g., raw text, movie ratings), reported by
 subjects (e.g., survey responses), or indirectly inferred/derived from other data (e.g., part-of-speech tags, model-based guesses for age or language)?
 If the data was reported by subjects or indirectly inferred/derived from other data, was the data validated/verified? If so, please describe how.
-- **What mechanisms or procedures were used to collect the data (e.g., hardware apparatuses or sensors, manual human curation, software programs, software APIs)?** How were these mechanisms or procedures validated?**
+- **What mechanisms or procedures were used to collect the data (e.g., hardware apparatuses or sensors, manual human curation, web crawling/scraping tools, APIs)?** How were these mechanisms or procedures validated?**
 - **If the dataset is a sample from a larger set, what was the sampling strategy (e.g., deterministic, probabilistic with specific sampling probabilities)?**
 - **Who was involved in the data collection process (e.g., students, crowdworkers, contractors) and how were they compensated (e.g., how much were crowdworkers paid)?**
 - **Over what timeframe was the data collected? Does this timeframe match the creation timeframe of the data associated with the instances
 (e.g., recent crawl of old news articles)?** If not, please describe the timeframe in which the data associated with the instances was created.
 - **Were any ethical review processes conducted (e.g., by an institutional review board)?** If so, please provide a description of these review processes, including the outcomes, as well as a link or other access point to any supporting documentation.
-If the dataset does not relate to people, you may skip the remaining questions in this section.
+
+### If the dataset does not relate to people, you may skip the remaining questions in this section.
 - **Did you collect the data from the individuals in question directly, or obtain it via third parties or other sources (e.g., websites)?**
 - **Were the individuals in question notified about the data collection?** If so, please describe (or show with screenshots or other information) how notice was provided, and provide a link or other access point to, or otherwise reproduce, the exact language of the notification itself.
 - **Did the individuals in question consent to the collection and use of their data?** If so, please describe (or show with screenshots or other information) how consent was requested and provided, and provide a link or other access point to, or otherwise reproduce, the exact language to which the individuals consented.
-- **If consent was obtained, were the consenting individuals provided with a mechanism to revoke their consent in the future orfor certain uses?** If so, please provide a description, as well as a link or other access point to the mechanism (if appropriate).
+- **If consent was obtained, were the consenting individuals provided with a mechanism to revoke their consent in the future or for certain uses?** If so, please provide a description, as well as a link or other access point to the mechanism (if appropriate).
 - **Has an analysis of the potential impact of the dataset and its use on data subjects (e.g., a data protection impact analysis) been conducted?** If so, please provide a description of this analysis, including the outcomes, as well as a link or other access point to any supporting documentation.
 - **Any other comments?**
 
 ## 4. Preprocessing/Cleaning/Labeling
-Dataset creators should read through these questions prior to any preprocessing, cleaning, or labeling and then provide answers once these tasks are complete. The questions in this section are intended to provide dataset consumers with the information they need to determine whether the “raw” data has been processed in ways that are compatible with their chosen tasks. For example, text that has been converted into a “bag-of-words” is not suitable for tasks involving word order.
+Dataset creators should read through these questions prior to any preprocessing, cleaning, or labeling and then provide answers once these tasks are complete. The questions in this section are intended to provide dataset consumers with the information they need to determine whether the “raw” data has been processed in ways that are compatible with their specific use cases. For example, text that has been converted into a “bag-of-words” is not suitable for tasks involving word order.
 
-- **Was any preprocessing/cleaning/labeling of the data done (e.g., discretization or bucketing, tokenization, part-of-speech tagging, SIFT feature extraction, removal of instances, processing of missing values)?** If so, please provide a description. If not, you may skip the remaining questions in this section.
-- **Was the “raw” data saved in addition to the preprocessed/cleaned/labeled data (e.g., to support unanticipated future uses)?** If so, please provide a link or other access point to the “raw” data.
+- **Was any preprocessing/cleaning/labeling of the data conducted (e.g., stemming, chunking, bucketing, tokenisation, part-of-speech tagging, SIFT (scale-invariant feature transform) extraction, removal of instances, processing of missing values)?** If so, please provide a description. If not, you may skip the remaining questions in this section.
+- **Was the “raw” data saved in addition to the preprocessed/cleaned/labeled data (e.g., to support unanticipated future uses)?** If so, please provide a description and link or other access point to the “raw” data.
 - **Is the software that was used to preprocess/clean/label the data available?** If so, please provide a link or other access point.
 - **Any other comments?**
 
